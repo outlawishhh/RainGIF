@@ -60,9 +60,12 @@ Prebuilt `.rmskin` package is available from the Releases page and can be instal
 
 ## Customization
 
-Edit the variables section to customize the appearance:
+Edit the variables and settings section to customize the appearance and performance:
 
 ```ini
+[Rainmeter]
+Update=1
+
 [Variables]
 Width=352
 Height=200
@@ -74,12 +77,13 @@ CurrentFrame=1
 
 ### Available Options
 
-| Variable | Description |
+| Variable / Setting | Description |
 | --- | --- |
-| Width | Width of the image widget |
-| Height | Height of the image widget |
-| FrameCount | Total number of frames extracted (Must match your GIF) |
-| FrameRateDivider | Controls playback speed (Higher value = slower playback) |
+| **Update** | Specifies how often the skin updates in milliseconds. Setting this to a very low value (like `1`) ensures maximum fluid rendering but might cause lag on lower-end systems. Increase this if you experience performance drops. |
+| **Width** | Width of the image widget |
+| **Height** | Height of the image widget |
+| **FrameCount** | Total number of frames extracted (Must match your GIF) |
+| **FrameRateDivider** | Controls playback speed (Higher value = slower playback) |
 
 > **Note:** To see the frame counter on your screen for debugging, look at the bottom of `RainGIF.ini` and uncomment the `[MeterDebug]` meter by removing the semicolons (`;`).
 
