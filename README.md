@@ -40,10 +40,14 @@ Documents/
 └── Rainmeter/
     └── Skins/
         └── RainGIF/
-            ├── @Resources/
-            │   ├── extract_frames.bat
-            │   └── input.gif
-            └── RainGIF.ini
+            ├── RainGIF.ini
+            └── @Resources/
+                ├── extract_frames.bat
+                ├── input.gif
+                └── frames/
+                    ├── frame1.png
+                    ├── frame2.png
+                    └── ...
 
 ```
 
